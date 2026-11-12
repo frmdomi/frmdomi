@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 33 30" role="img" aria-labelledby="t d"><title id="t">x</title><desc id="d">x link</desc><style>
+.ink{fill:#14120f}.mute{fill:#625d54}.faint{fill:#7d776c}
+.rule{stroke:rgba(20,18,15,.14);stroke-width:1}
+.pen{fill:none;stroke:#e2583a;stroke-linecap:round;stroke-linejoin:round}
+.line{fill:none;stroke:#7d776c;stroke-linecap:round}
+.draw{stroke-dasharray:1;animation:draw 1.5s cubic-bezier(.6,0,.3,1) both}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:reduce){.draw,.rise{animation:none}}
+</style><path class="ink" d="M8 21.2 9.1 21.6V22H5.2V21.6L6.4 21.2L4.3 18.4L4.1 18.2L1.5 14.7L0.3 14.2V13.8H4.2V14.2L3.1 14.6L4.9 17.2L5.2 17.4ZM4.7 18.2 2.1 21.2 3.3 21.6V22H0.2V21.6L1.2 21.2L4.3 17.7L4.6 17.4L6.9 14.6L5.8 14.2V13.8H8.9V14.2L7.8 14.6L5 17.9Z"/><svg x="14.3" y="10" width="19" height="10" viewBox="0 0 28 14"><path class="pen" d="M2 7.7c7-.9 14-1.1 23-.5M19.2 2.1l5.9 5.1-6 5" stroke-width="2.2"/></svg></svg>
