@@ -222,12 +222,11 @@ def row(th, mode, key, num, name, lines, link, focus=False):
 
 # ---------------------------------------------------------------- the arc
 STOPS = [
-    ("2021-ish", ["streamed", "every day"]),
+    ("2024", ["b.sc. done,", "first degree"]),
     ("2025", ["started", "euromakers"]),
-    ("2026", ["m.sc. thesis,", "lidar + ai"]),
-    ("oct 2026", ["shut down", "the side apps"]),
-    ("nov 2026", ["first games", "on crazygames"]),
-    ("next", ["full-time", "indie game dev"]),
+    ("jun 2026", ["started", "making games"]),
+    ("nov 2026", ["finishing", "the m.sc."]),
+    ("next", ["full-time game dev,", "making content."]),
 ]
 
 
@@ -240,7 +239,10 @@ def arc(th, mode):
     p.append(f'<svg x="-2" y="52" width="{tw + 8:.0f}" height="12" viewBox="0 0 200 12" preserveAspectRatio="none">'
              f'<path class="pen draw" d="{UNDERLINE}" stroke-width="2.4" pathLength="1" '
              f'vector-effect="non-scaling-stroke"{delay(.3)}/></svg>')
-    x0, step, ly = 8, 146, 140
+    ly = 140
+    x0 = 8
+    lastw = max(measure('serif-it', ln, 18) for ln in STOPS[-1][1])
+    step = (W - x0 - lastw) / (len(STOPS) - 1)
     xs = [x0 + i * step for i in range(len(STOPS))]
     last = xs[-1]
     # hand-drawn line: gentle wobble between stops, ending inside the final mark

@@ -32,7 +32,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/arc-dark.svg" />
-  <img src="./assets/arc-light.svg" width="100%" alt="the arc: 2021-ish streamed every day; 2025 started euromakers; 2026 m.sc. thesis, lidar + ai; oct 2026 shut down the side apps; nov 2026 first games on crazygames; next, full-time indie game dev." />
+  <img src="./assets/arc-light.svg" width="100%" alt="the arc: 2024 b.sc. done, first degree; 2025 started euromakers; june 2026 started making games; nov 2026 finishing the m.sc.; next, full-time game dev, making content." />
 </picture>
 
 <br />
