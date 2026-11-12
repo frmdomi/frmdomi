@@ -293,7 +293,7 @@ def main():
         files = {
             f"hero-{mode}.svg": hero(th, mode),
             f"now-{mode}.svg": head(th, mode, "now.", "what i'm working on", "now"),
-            f"arc-{mode}.svg": arc(th, mode),
+            f"timeline-{mode}.svg": arc(th, mode),
         }
         for i, (key, num, name, lines, link) in enumerate(ROWS):
             files[f"row-{key}-{mode}.svg"] = row(th, mode, key, num, name, lines, link, focus=(i == 0))
