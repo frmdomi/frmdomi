@@ -10,10 +10,10 @@
   <source media="(prefers-color-scheme: dark)" srcset="./assets/now-dark.svg" />
   <img src="./assets/now-light.svg" width="100%" alt="now. what i'm working on" />
 </picture>
-<a href="https://www.crazygames.com/game/butcher-evolution"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/row-games-dark.svg" />
-  <img src="./assets/row-games-light.svg" width="100%" alt="01 games: small, replayable browser games on crazygames. butcher evolution is out. roblox games next, as tinyloop games." />
-</picture></a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/row-making-games-dark.svg" />
+  <img src="./assets/row-making-games-light.svg" width="100%" alt="01 games: small browser games, trying to get the first one into full launch. and starting my first roblox game. in the works." />
+</picture>
 <a href="https://euromakers.org"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/row-euromakers-dark.svg" />
   <img src="./assets/row-euromakers-light.svg" width="100%" alt="02 euromakers: the home of european software. euromakers.org" />

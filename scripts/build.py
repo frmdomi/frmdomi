@@ -181,10 +181,10 @@ def head(th, mode, title, note, ident):
 
 # ---------------------------------------------------------------- project rows
 ROWS = [
-    ("games", "01", "games",
-     ["small, replayable browser games on crazygames.",
-      "butcher evolution is out. roblox games next, as tinyloop games."],
-     "play on crazygames"),
+    ("making-games", "01", "games",
+     ["small browser games, trying to get the first one",
+      "into full launch. and starting my first roblox game."],
+     "in the works"),
     ("euromakers", "02", "euromakers",
      ["the home of european software. a curated directory",
       "of products made in europe, with weekly launches."],
@@ -212,10 +212,12 @@ def row(th, mode, key, num, name, lines, link, focus=False):
                  f'pathLength="1" vector-effect="non-scaling-stroke"{delay(.5)}/></svg>')
     for i, ln in enumerate(lines):
         p.append(t("sans", ln, 14.5, 360, 42 + i * 23, "mute", track=.002)[0])
-    lp, lw = t("sans-med", link, 12.5, 360, 92, "ink", track=.03)
+    is_link = "." in link
+    lp, lw = t("sans-med", link, 12.5, 360, 92, "ink" if is_link else "faint", track=.03)
     p.append(lp)
-    p.append(f'<svg x="{360 + lw + 7:.1f}" y="83" width="17" height="9" viewBox="0 0 28 14">'
-             f'<path class="pen" d="{ARROW}" stroke-width="2.2"/></svg>')
+    if is_link:
+        p.append(f'<svg x="{360 + lw + 7:.1f}" y="83" width="17" height="9" viewBox="0 0 28 14">'
+                 f'<path class="pen" d="{ARROW}" stroke-width="2.2"/></svg>')
     p.append(f'<line class="rule" x1="0" y1="{h-.5}" x2="{W}" y2="{h-.5}"/>')
     return svg(W, h, f"{name}: {link}", " ".join(lines), "".join(p), th)
 
