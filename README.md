@@ -31,8 +31,8 @@
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/timeline-dark.svg" />
-  <img src="./assets/timeline-light.svg" width="100%" alt="the arc: 2024 b.sc. done, first degree; 2025 started euromakers; june 2026 started making games; nov 2026 finishing the m.sc.; next, full-time game dev, making content." />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/path-dark.svg" />
+  <img src="./assets/path-light.svg" width="100%" alt="the arc: 2024 b.sc. done, first degree; 2025 started euromakers; 2026 built saas and small tools; oct 2026 switched focus to games; nov 2026 finishing the m.sc.; next, full-time game dev, making content." />
 </picture>
 
 <br />

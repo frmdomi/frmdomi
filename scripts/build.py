@@ -224,7 +224,8 @@ def row(th, mode, key, num, name, lines, link, focus=False):
 STOPS = [
     ("2024", ["b.sc. done,", "first degree"]),
     ("2025", ["started", "euromakers"]),
-    ("jun 2026", ["started", "making games"]),
+    ("2026", ["built saas", "and small tools"]),
+    ("oct 2026", ["switched focus", "to games"]),
     ("nov 2026", ["finishing", "the m.sc."]),
     ("next", ["full-time game dev,", "making content."]),
 ]
@@ -293,7 +294,7 @@ def main():
         files = {
             f"hero-{mode}.svg": hero(th, mode),
             f"now-{mode}.svg": head(th, mode, "now.", "what i'm working on", "now"),
-            f"timeline-{mode}.svg": arc(th, mode),
+            f"path-{mode}.svg": arc(th, mode),
         }
         for i, (key, num, name, lines, link) in enumerate(ROWS):
             files[f"row-{key}-{mode}.svg"] = row(th, mode, key, num, name, lines, link, focus=(i == 0))
